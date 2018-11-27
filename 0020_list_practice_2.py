@@ -1,0 +1,25 @@
+# list综合练习
+
+# 新建list
+tourism_place = ['TaiWan','America','France','Japaness','England']
+print(tourism_place)
+print('=======================================================')
+print(sorted(tourism_place))
+print('=======================================================')
+print(tourism_place)
+print('=======================================================')
+print(sorted(tourism_place,reverse=True))
+print('=======================================================')
+print(tourism_place)
+print('=======================================================')
+tourism_place.reverse()
+print(tourism_place)
+print('=======================================================')
+tourism_place.reverse()
+print(tourism_place)
+print('=======================================================')
+tourism_place.sort()
+print(tourism_place)
+print('=======================================================')
+tourism_place.sort(reverse=True)
+print(tourism_place)
