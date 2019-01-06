@@ -18,14 +18,14 @@
 
 # 7.3.3 使用用户输入来填充字典
 responses = {}
-polling_active = True # 设置一个标志，指出调查是否继续
-while polling_active: # 进入while循环
-    name = input("\nWhat is your name? ") # 提示输入调查用户名
-    response = input("Which mountain would you like to climb someday? ") # 提示输入调查用户的回答
-    responses[name] = response # 将被调查用户名存储在字典中
-    repeat = input("Would you like to let another person respond? (yes / no) ") # 询问是否还有别人要参与调查，回答yes继续回答no结束
-    if repeat == 'no': # 如果输入no
-        polling_active = False # 循环标志赋值False，循环结束
-print("\n--- poll Results ---") # 打印一行字
-for name,response in responses.items(): # for遍历responses字典中的键 - 值对
-    print(name.title() + " would like to climb " + response.title() + "." ) # 打印字典中的name+一句话+response
+polling_active = True  # 设置一个标志，指出调查是否继续
+while polling_active:  # 进入while循环
+    name = input("\nWhat is your name? ")  # 提示输入调查用户名
+    response = input("Which mountain would you like to climb someday? ")  # 提示输入调查用户的回答
+    responses[name] = response  # 将被调查用户名存储在字典中
+    repeat = input("Would you like to let another person respond? (yes / no) ")  # 询问是否还有别人要参与调查，回答yes继续回答no结束
+    if repeat == 'no':  # 如果输入no
+        polling_active = False  # 循环标志赋值False，循环结束
+print("\n--- poll Results ---")  # 打印一行字
+for name, response in responses.items():  # for遍历responses字典中的键 - 值对
+    print(name.title() + " would like to climb " + response.title() + ".")  # 打印字典中的name+一句话+response
